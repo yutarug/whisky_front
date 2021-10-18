@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+/*================
+font
+==========================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*==================-
+common
+============================*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100px;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 0.16rem;
+  z-index: 1;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1.5px;
+  color: #fff;
+  background-image: url("../img/muJ76z94JmPlkse1633129443_1633129454.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  transition: .3s;
+  opacity: .8;
+}
+
+.inner {
+  width: 1000px;
+  margin: auto;
+  max-width: 90%;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1279px) {
+  html {
+    font-size: 75px;
+  }
+  body {
+    font-size: calc((0.16rem * 100/50) * 0.9);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 50px;
+  }
+  body {
+    font-size: calc((0.16rem * 100/50) * 0.9);
+  }
+  .is_sp {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .is_pc {
+    display: none;
+  }
+}
+
+.ttl {
+  font-size: 32px;
+  width: 44%;
+  margin: 0 auto;
+  text-align: left;
+}
+.bottles_new {
+  padding: 80px 0;
+}
+
+.box ul {
+  line-height: 62px;
+}
+.box ul li {
+  font-size: 25px;
+  position: relative;
+  width: 43%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.box ul li::after {
+  content: "";
+  border-bottom: 3px dotted #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 1px;
+}
+
+.box:last-child ul li:last-child::after {
+  border: none;
+}
+
+.wrap .box:first-child ul li:last-child::after {
+  width: 210px;
+}
+
+.wrap {
+  display: flex;
+  padding: 50px 0;
+}
+
+.box {
+  width: 50%;
+  text-align: center;
+}
+
+.ttls {
+  font-size: 40px;
+  text-align: center;
+}
+
+.tag {
+  width: 43%;
+  margin: 25px auto;
+  text-align: left;
+  font-size: 25px;
+  position: relative;
+  padding: 15px 0;
+}
+.tag::after {
+  content: "";
+  border-top: 3px dotted #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 210px;
+  height: 1px;
+}
+
+.tags {
+  width: 43%;
+  margin: 25px auto;
+  text-align: left;
+  font-size: 30px;
+  padding: 15px 0;
+}
+
+/*====================
+スマホ版
+==============================*/
+@media screen and (max-width: 767px) {
+
+  .bottles_new {
+    padding: 30px 0;
+  }
+
+  .wrap {
+    padding: 0;
+    align-items: flex-end;
+  }
+
+
+  .ttl {
+    font-size: 30px;
+    width: 100%;
+  }
+  .border_box p {
+    width: 240px;
+    font-size: 20px;
+    padding: 10px 0;
+  }
+
+  .box ul {
+    line-height: 54px;
+  }
+
+  .box ul li {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .btn {
+    font-size: 20px;
+    width: 170px;
+    padding: 10px 0;
+  }
+  .tag {
+    width: 100%;
+    font-size: 20px;
+  }
+  .wrap .box:first-child ul li:last-child::after {
+    width: 140px;
+  }
+  .tag::after {
+    width: 140px;
+  }
+  .tags {
+    width: 100%;
+    font-size: 25px;
+  }
+
+  .ttls {
+    font-size: 30px;
+    padding: 20px 0;
+  }
+}
